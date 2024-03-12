@@ -1,0 +1,20 @@
+.hero-section {
+  font-family: $font-family-instrument;
+  text-align: center;
+  margin-inline: 1.5rem;
+
+  .hero-section-content {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .hero-text {
+      font-weight: $font-regular;
+      font-size: 4.5rem;
+    }
+
+    .hero-button {
+      font-family: $font-family-satoshi;
+    }
+  }
+}

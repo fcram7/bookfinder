@@ -1,0 +1,33 @@
+.search-book-content, .book-list-content {
+  font-family: $font-family-satoshi;
+}
+
+.search-book-content {
+  font-family: $font-family-satoshi;
+
+  .search-title {
+    font-weight: $font-regular;
+    font-size: $bigger-font-size;
+    color: $color-1;
+  }
+
+  .search-button {
+    font-family: $font-family-chillax;
+  }
+}
+
+.book-list-content {
+  .book-card {
+    font-family: $font-family-satoshi;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .search-book-result-pagination {
+    justify-content: center;
+    margin-block: 2rem;
+  }
+}
+
