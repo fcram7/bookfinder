@@ -12,8 +12,13 @@ const SearchBook = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const searchResult = await Api.getSearchedBook(bookContext.bookSearch);
-    bookContext.setBookSearchResult(searchResult.data.items);
+    try{
+      const searchResult = await Api.getSearchedBook(bookContext.bookSearch);
+      bookContext.setBookSearchResult(searchResult.data.items);
+    } catch (error) {
+      console.error("Failed to catch books: ", error)
+    }
+
 
     bookContext.setWaitingForSearch(false);
   };
