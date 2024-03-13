@@ -10,38 +10,42 @@ const Hero = () => {
 
   return (
     <section className="hero-section section">
-      <div className="hero-section-content flex">
-        <Box
-          width={700}
-          py={4}
-        >
-          <h1 className="hero-text">
-            Looking for books? BookLook got your back!
-            Find and read easily!
-          </h1>
-        </Box>
-        <Box>
-          <Button
-            style={{
-              color: '#F1F2EE',
-              backgroundColor: '#1E555C'
-            }}
-            variant="contained"
-            onClick={onLookForBooksClickHandler}
+      <div className="hero-section-container">
+        <div className="hero-section-content flex">
+          <Box
+            alignItems="center"
+            justifyContent="center"
+            width={700}
+            py={4}
           >
-            <SearchOutlinedIcon />
-            <Typography 
-              variant="body1" 
-              className="hero-button"
-              sx={{
-                textTransform: 'capitalize',
-                marginLeft: '0.25rem'
+            <h1 className="hero-text">
+              Looking for books? BookLook got your back!
+              Find and read easily!
+            </h1>
+          </Box>
+          <Box>
+            <Button
+              style={{
+                color: '#F1F2EE',
+                backgroundColor: '#1E555C'
               }}
+              variant="contained"
+              onClick={onLookForBooksClickHandler}
             >
-              Look for books
-            </Typography>
-          </Button>
-        </Box>
+              <SearchOutlinedIcon />
+              <Typography 
+                variant="body1" 
+                className="hero-button"
+                sx={{
+                  textTransform: 'capitalize',
+                  marginLeft: '0.25rem'
+                }}
+              >
+                Look for books
+              </Typography>
+            </Button>
+          </Box>
+        </div>
       </div>
     </section>
    );

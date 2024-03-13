@@ -1,11 +1,10 @@
 header {
-  position: fixed;
-  top: 4%;
   width: 100%;
+  z-index: $z-fixed;
 }
 
 .header-content {
-  background-color: transparent;
+  background-color: $color-2;
   height: 4rem;
   width: 100%;
   align-items: center;
@@ -22,7 +21,7 @@ header {
   }
 
   .header-logo, .navbar-menu {
-    color: $color-1;
+    color: $color-3;
   }
 
   .navbar-content {
@@ -36,8 +35,8 @@ header {
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      background-color: $color-2;
-      color: $color-3;
+      background-color: $color-3;
+      color: $color-2;
     }
   }
 }

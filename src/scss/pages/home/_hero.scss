@@ -1,16 +1,25 @@
 .hero-section {
   font-family: $font-family-instrument;
-  text-align: center;
   margin-inline: 1.5rem;
+
+  .hero-section-container {
+    width: 100%;
+  }
 
   .hero-section-content {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 
     .hero-text {
       font-weight: $font-regular;
       font-size: 4.5rem;
+      text-align: center;
+
+      @include media (">=xs", "<=sm") {
+        font-size: 4rem;
+      }
     }
 
     .hero-button {
